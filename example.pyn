@@ -1,0 +1,57 @@
+lua = false  // Use JavaScript mode instead of Lua
+
+:html
+<div class="container">
+    <h1>Welcome to Pynguin language</h1>
+    <div id="content"></div>
+    <div id="greeting"></div>
+</div>
+~html
+
+:css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#content, #greeting {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+~css
+
+:javascript
+// Update content
+const content = document.getElementById('content');
+content.textContent = "This content was updated using javascript!";
+
+// Greeting animation
+const greetingElement = document.getElementById('greeting');
+let message = 'Hello, World!';
+
+function updateGreeting() {
+    const now = new Date();
+    message = `Hello, World! [Updated: ${now.toLocaleTimeString()}]`;
+    greetingElement.textContent = message;
+}
+
+// Update greeting every 2 seconds
+setInterval(updateGreeting, 2000);
+updateGreeting();
+~javascript
