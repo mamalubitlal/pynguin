@@ -1,6 +1,6 @@
 # Pynguin (Pyn) Language
 
-Pynguin - это веб-ориентированный язык программирования, объединяющий HTML, CSS и Lua/JavaScript в едином файле. Он разработан для прямого выполнения в веб-браузерах.
+Pynguin - это веб-ориентированный язык программирования, объединяющий HTML, CSS и JavaScript/Lua в едином файле. Он разработан для прямого выполнения в веб-браузерах.
 
 ## Базовая структура
 
@@ -100,6 +100,29 @@ content.textContent = "This content was updated using JavaScript!";
 </script>
 ```
 
+4. Или используйте встроенный скрипт:
+```html
+<script type="text/pynguin">
+lua = false
+
+:html
+<div id="greeting">Loading...</div>
+~html
+
+:css
+#greeting {
+    font-size: 24px;
+    color: blue;
+}
+~css
+
+:javascript
+const greeting = document.getElementById("greeting");
+greeting.textContent = "Hello from Pynguin!";
+~javascript
+</script>
+```
+
 ## Примеры
 
 ### Базовый пример с JavaScript
@@ -139,3 +162,7 @@ function incrementCounter()
 end
 ~lua
 ```
+
+## Заключение
+
+Pynguin - это мощный инструмент для веб-разработки, объединяющий HTML, CSS и скриптовые языки в одном файле. Он идеально подходит для быстрого прототипирования и обучения.
