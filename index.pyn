@@ -1,4 +1,4 @@
-Clua = false  // Use JavaScript mode
+lua = false  // Use JavaScript mode
 
 :html
 <div class="container">
