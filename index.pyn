@@ -12,16 +12,6 @@ Clua = false  // Use JavaScript mode
             <li>Simple syntax for rapid prototyping</li>
         </ul>
     </div>
-    <div id="example">
-        <h2>Example Code</h2>
-        <pre>
-lua = false  // Установите true для использования Lua
-
-:html
-1<div class="container">
-2    <h1>Welcome to Pynguin</h1>
-3    <p id="description">This is a paragraph.</p>
-4</div>
 ~html
 
 :css
